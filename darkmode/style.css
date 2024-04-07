@@ -1,13 +1,70 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    padding: 25px;
-    background-color: white;
-    color: black;
-    font-size: 25px;
+    font-family: "Adobe Garamond Pro";
+    background-color: #f3f3f3;
+    color: #333333;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 250px;
+    padding: 30px 80px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 10px rgba(0, 123, 255, 0.2);
+}
+
+.github-link {
+    margin-top: 350px;
+}
+
+.github-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.github-link a:hover {
+    text-decoration: underline;
 }
 
 .dark-mode {
-    background-color: black;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.dark-mode button {
+    background-color: #4CAF50;
     color: white;
 }
 
+.dark-mode button:hover {
+    background-color: #45a049;
+}
 
+.dark-mode .github-link a {
+    color: #4CAF50;
+}
+
+.dark-mode .github-link a:hover {
+    color: #45a049;
+}
